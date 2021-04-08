@@ -16,7 +16,7 @@ const Admin = () => {
       price: data.price,
       imgUrl: imgUrl,
     };
-    const url = "http://localhost:8000/addproduct";
+    const url = "https://desolate-river-98696.herokuapp.com/addproduct";
     console.log(infoData);
     fetch(url, {
       method: "POST",

@@ -11,12 +11,12 @@ const Order = () => {
   // const order = { productName, productPrice, userEmail };
 
   useEffect(() => {
-    fetch(`http://localhost:8000/getorder/${userEmail}`)
+    fetch(`https://desolate-river-98696.herokuapp.com/getorder/${userEmail}`)
       .then((response) => response.json())
       .then((data) => setOrder(data));
   }, [userEmail]);
   const handelorder = () => {
-    const url = "http://localhost:8000/addorder";
+    const url = "https://desolate-river-98696.herokuapp.com/addorder";
     const order = { productName, productPrice, userEmail };
     fetch(url, {
       method: "POST",

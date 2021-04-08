@@ -10,7 +10,7 @@ const Checkout = () => {
   const [product, setproduct] = useContext(productContext);
 
   useEffect(() => {
-    fetch(`http://localhost:8000/product/${id}`)
+    fetch(`https://desolate-river-98696.herokuapp.com/product/${id}`)
       .then((response) => response.json())
       .then((data) => {
         setCheckout(data);
